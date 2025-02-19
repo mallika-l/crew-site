@@ -1,5 +1,18 @@
 <template>
-  <div class="about">
-    <h1>This is an about page</h1>
-  </div>
+ <about/>
 </template>
+
+<script>
+import { defineComponent } from 'vue'
+import About from '@/components/About.vue'
+
+export default defineComponent({
+  components: {
+    About
+  },
+  created () {
+    window.scrollTo(0, 0)
+  }
+
+})
+</script>
